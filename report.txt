@@ -1,0 +1,17 @@
+1) status = false, connected failed ->fin
+2) status - true, connect done
+3.1) '+' - option add, input value, add value with current balance, goto 3 ->fin
+3.2) '-' - option sub, input value, sub value with current balance, goto 3 ->fin
+3.3) '0' - close connect ->fin
+
+
+
+P1 - status
+P2 - option/data
+P3 - value
+
+1) P1(status = false) Q (connect failed) -> fin
+2) P1(status = true) Q (connected done)
+3.1) P3(option = '+') U (P3, add()) goto 3
+3.2) P3(option = '-') U (P3, sub()) goto 3
+3.3) P3(option = '0') -> fin
